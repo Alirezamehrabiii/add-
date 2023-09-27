@@ -23,14 +23,19 @@ body{
     text-align: center;
     border-radius: 15px;
 }
-.forms{
-
+form{
+    width: 250px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 15px;
+    box-shadow: 0 0 5px rgb(156, 156, 156);
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-
+    flex-direction: column-reverse;
+    border-radius: 10px;
 }
-input{
-    width: 40px;
+input[type = number]{
+    width: 20px;
     all: unset;
     padding: 10px;
     background-color: #fff;
@@ -51,6 +56,7 @@ button{
     cursor: pointer;
     transition: 0.2s;
     box-shadow: 0 0 5px rgb(156, 156, 156);
+    text-align: center;
 }
 button:hover{
     background-color: #c7c7c7;
@@ -69,7 +75,6 @@ button:hover{
 }
 
 select{
-    all: unset;
     background-color: #fff;
     padding: 10px 30px;
     font-family: 'vazir';
@@ -77,4 +82,7 @@ select{
     cursor: pointer;
     font-weight: bold;
     color: #7e7e7e;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
 }

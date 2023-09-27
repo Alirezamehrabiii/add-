@@ -2,9 +2,10 @@ const p1 = document.querySelector('.p1');
 const p2 = document.querySelector('.p2');
 const number = document.querySelector('input[type=number]')
 const btn = document.querySelector('button');
-const select = document.querySelector('.option1');
+const select = document.querySelector('select');
 
-select.selected = 'minutes'
+
+
 
 let date = new Date();
 p1.innerHTML = date;
@@ -68,7 +69,8 @@ btn.addEventListener('click' , ()=>{
             return newdate;
         }
     
+        
     }
-    p2.innerHTML = (add(Number(number.value), 'minutes'));
+    p2.innerHTML = (add(Number(number.value), select.value));
 
 })
